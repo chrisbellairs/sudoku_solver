@@ -1,8 +1,6 @@
 class PuzzlesController < ApplicationController
   def index
-  end
-
-  def new
+    @puzzle = Puzzle.new
   end
 
   def create
