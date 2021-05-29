@@ -14,4 +14,10 @@ Added code to puzzle controller to create new puzzle instance when form is submi
 
 Created Puzzle class instance method, build_puzzle, that returns a 2d array of the submitted puzzle.
 
+Added a default of 0 to all cells to make user input easier.
+
+Installed rspec.
+
+Coded test for build_puzzle method checking that it returns a 9x9 2D Array.
+
 
