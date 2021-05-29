@@ -14,12 +14,7 @@ class Puzzle < ApplicationRecord
 
   def solve_puzzle(array)
     arr = array
-    count = 0
     while puzzle_contains_zero(arr) do
-      # new_count = count_zeros(arr)
-      # break if count == new_count
-
-      # count = new_count
       arr.each_with_index do |row, i|
         row.each_with_index do |col, j|
           next unless col.zero?
@@ -35,13 +30,6 @@ class Puzzle < ApplicationRecord
   end
 
   private
-
-  def count_zeros(arr)
-    count = 0
-    arr.each do |row|
-      count += row.sum
-    end
-  end
 
   def puzzle_contains_zero(arr)
     contains_zero = false

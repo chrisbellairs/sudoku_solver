@@ -16,10 +16,16 @@ Created Puzzle class instance method, build_puzzle, that returns a 2d array of t
 
 Added a default of 0 to all cells to make user input easier.
 
-Installed rspec.
+Installed rspec. Aware I should have coded a test for build_puzzle before coding it.
 
 Coded test for build_puzzle method checking that it returns a 9x9 2D Array.
 
 Coded test for solve_puzzle method to ensure it solves the example correctly.
 
+Created solve_puzzle instance method. Method loops as long as there are empty cells left to calculate. At each cell containing zero it finds the numbers in each square, row and column. If there are 8 individual numbers it fills the cell with the missing number between one and nine.
 
+I have used private methods with solve_puzzle to ensure that it retains single responcibility.
+
+I used pry to debug the code as the tests were not initially passing. I had one conditional break that was stopping the method from completing it's task as well as some errors in index numbers.
+
+I have added a second example puzzle to confirm it is working correctly.
