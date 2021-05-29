@@ -20,4 +20,6 @@ Installed rspec.
 
 Coded test for build_puzzle method checking that it returns a 9x9 2D Array.
 
+Coded test for solve_puzzle method to ensure it solves the example correctly.
+
 

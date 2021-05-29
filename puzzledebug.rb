@@ -1,4 +1,6 @@
-class Puzzle < ApplicationRecord
+require 'pry'
+
+class Puzzle
   def build_puzzle
     puzzle_array = [[cell_01, cell_02, cell_03, cell_04, cell_05, cell_06, cell_07, cell_06, cell_09],
                     [cell_10, cell_11, cell_12, cell_13, cell_14, cell_15, cell_16, cell_17, cell_18],
@@ -59,7 +61,7 @@ class Puzzle < ApplicationRecord
     surrounding_numbers << find_square(arr, row, col)
     surrounding_numbers << arr[row]
     surrounding_numbers << find_col(arr, col)
-
+    # binding.pry
     return surrounding_numbers.flatten.uniq.filter { |num| !num.zero? }
   end
 
@@ -120,3 +122,16 @@ class Puzzle < ApplicationRecord
     return column
   end
 end
+
+puzzle = Puzzle.new
+
+
+p puzzle.solve_puzzle([[0, 0, 0, 2, 6, 0, 7, 0, 1],
+              [6, 8, 0, 0, 7, 0, 0, 9, 0],
+              [1, 9, 0, 0, 0, 4, 5, 0, 0],
+              [8, 2, 0, 1, 0, 0, 0, 4, 0],
+              [0, 0, 4, 6, 0, 2, 9, 0, 0],
+              [0, 5, 0, 0, 0, 3, 0, 2, 8],
+              [0, 0, 9, 3, 0, 0, 0, 7, 4],
+              [0, 4, 0, 0, 5, 0, 0, 3, 6],
+              [7, 0, 3, 0, 1, 8, 0, 0, 0]])
