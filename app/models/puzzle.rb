@@ -1,13 +1,34 @@
 class Puzzle < ApplicationRecord
   def build_puzzle
-    puzzle_array = [[@puzzle.cell_01, @puzzle.cell_02, @puzzle.cell_03, @puzzle.cell_04, @puzzle.cell_05, @puzzle.cell_06, @puzzle.cell_07, @puzzle.cell_06, @puzzle.cell_09],
-                    [@puzzle.cell_10, @puzzle.cell_11, @puzzle.cell_12, @puzzle.cell_13, @puzzle.cell_14, @puzzle.cell_15, @puzzle.cell_16, @puzzle.cell_17, @puzzle.cell_18],
-                    [@puzzle.cell_19, @puzzle.cell_20, @puzzle.cell_21, @puzzle.cell_22, @puzzle.cell_23, @puzzle.cell_24, @puzzle.cell_25, @puzzle.cell_26, @puzzle.cell_27],
-                    [@puzzle.cell_28, @puzzle.cell_29, @puzzle.cell_30, @puzzle.cell_31, @puzzle.cell_32, @puzzle.cell_33, @puzzle.cell_34, @puzzle.cell_35, @puzzle.cell_36],
-                    [@puzzle.cell_37, @puzzle.cell_38, @puzzle.cell_39, @puzzle.cell_40, @puzzle.cell_41, @puzzle.cell_42, @puzzle.cell_43, @puzzle.cell_44, @puzzle.cell_45],
-                    [@puzzle.cell_46, @puzzle.cell_47, @puzzle.cell_48, @puzzle.cell_49, @puzzle.cell_50, @puzzle.cell_51, @puzzle.cell_52, @puzzle.cell_53, @puzzle.cell_54],
-                    [@puzzle.cell_55, @puzzle.cell_56, @puzzle.cell_57, @puzzle.cell_58, @puzzle.cell_59, @puzzle.cell_60, @puzzle.cell_61, @puzzle.cell_62, @puzzle.cell_63],
-                    [@puzzle.cell_64, @puzzle.cell_65, @puzzle.cell_66, @puzzle.cell_67, @puzzle.cell_68, @puzzle.cell_69, @puzzle.cell_70, @puzzle.cell_71, @puzzle.cell_72],
-                    [@puzzle.cell_73, @puzzle.cell_74, @puzzle.cell_75, @puzzle.cell_76, @puzzle.cell_77, @puzzle.cell_78, @puzzle.cell_79, @puzzle.cell_80, @puzzle.cell_81]]
+    puzzle_array = [[cell_01, cell_02, cell_03, cell_04, cell_05, cell_06, cell_07, cell_06, cell_09],
+                    [cell_10, cell_11, cell_12, cell_13, cell_14, cell_15, cell_16, cell_17, cell_18],
+                    [cell_19, cell_20, cell_21, cell_22, cell_23, cell_24, cell_25, cell_26, cell_27],
+                    [cell_28, cell_29, cell_30, cell_31, cell_32, cell_33, cell_34, cell_35, cell_36],
+                    [cell_37, cell_38, cell_39, cell_40, cell_41, cell_42, cell_43, cell_44, cell_45],
+                    [cell_46, cell_47, cell_48, cell_49, cell_50, cell_51, cell_52, cell_53, cell_54],
+                    [cell_55, cell_56, cell_57, cell_58, cell_59, cell_60, cell_61, cell_62, cell_63],
+                    [cell_64, cell_65, cell_66, cell_67, cell_68, cell_69, cell_70, cell_71, cell_72],
+                    [cell_73, cell_74, cell_75, cell_76, cell_77, cell_78, cell_79, cell_80, cell_81]]
+    return puzzle_array
+  end
+
+  def solve_puzzle(array)
+    arr = array
+    while puzzle_contains_zero(arr) do
+    end
+  end
+
+  private
+
+  def puzzle_contains_zero(arr)
+    contains_zero = false
+    arr.each do |row|
+      row.each do |num|
+        if num.zero?
+          contains_zero = true
+        end
+      end
+    end
+    return contains_zero
   end
 end

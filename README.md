@@ -10,6 +10,8 @@ Created routes index, new, create and show routes for puzzles.
 
 Built the index view containing the puzzle input form. Used bootsrap for basic styling. Used some custom css to size the puzzle and remove chrome input field styling.
 
-Added code to puzzle controller to create new puzzle instance when form is submitted and display on show page. Created a private puzzle_params method the prevent SQL Injection.
+Added code to puzzle controller to create new puzzle instance when form is submitted and display on show page. Created a private puzzle_params method to prevent SQL Injection.
+
+Created Puzzle class instance method, build_puzzle, that returns a 2d array of the submitted puzzle.
 
 
