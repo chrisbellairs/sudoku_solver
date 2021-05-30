@@ -33,3 +33,7 @@ I have added a second example puzzle to confirm it is working correctly.
 Created example and test to check that solve_puzzle returns a string if puzzle is unsolvable.
 
 Created break clause to return a message when the puzzle is unsolvable.
+
+Removed bootstrap from simple form to making styling easier and changed inputs to select fields.
+
+Created show page to display either an error message or the solved puzzle. Added variables making the instance method calls in the controller to enable this.

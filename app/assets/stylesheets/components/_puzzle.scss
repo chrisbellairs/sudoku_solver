@@ -1,6 +1,31 @@
 .puzzle_container {
-  width: 550px;
+  width: 600px;
   margin: 0px auto;
+  padding: 16px;
+  background-color: #f3f4ed;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.15);
+}
+
+.inputs_a {
+  background-color: #536162;
+  border-radius: 8px;
+  color: white;
+}
+
+.inputs_b {
+  background-color: #424642;
+  border-radius: 8px;
+  color: white;
+}
+
+.solve_button {
+  background-color: #ffcc29;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  font-family: Poppins;
+  color: white;
 }
 
 /* Chrome, Safari, Edge, Opera */

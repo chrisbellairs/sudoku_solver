@@ -2,116 +2,117 @@
   <h1>Sudoku Puzzle Solver</h1>
   <%= simple_form_for @puzzle, :html=> { class: 'puzzle_form' } do |f| %>
     <div class="puzzle_container">
-      <div class="row">
-        <div class="col"><%= f.input :cell_01, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_02, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_03, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_04, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_05, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_06, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_07, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_08, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_09, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_01, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_02, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_03, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_04, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_05, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_06, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_07, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_08, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_09, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
       </div>
 
-      <div class="row">
-        <div class="col"><%= f.input :cell_10, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_11, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_12, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_13, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_14, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_15, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_16, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_17, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_18, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_10, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_11, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_12, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_13, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_14, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_15, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_16, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_17, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_18, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
       </div>
 
-      <div class="row">
-        <div class="col"><%= f.input :cell_19, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_20, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_21, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_22, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_23, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_24, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_25, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_26, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_27, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_19, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_20, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_21, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_22, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_23, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_24, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_25, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_26, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_27, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
       </div>
 
-      <div class="row">
-        <div class="col"><%= f.input :cell_28, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_29, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_30, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_31, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_32, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_33, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_34, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_35, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_36, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_28, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_29, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_30, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_31, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_32, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_33, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_34, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_35, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_36, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
       </div>
 
-      <div class="row">
-        <div class="col"><%= f.input :cell_37, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_38, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_39, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_40, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_41, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_42, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_43, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_44, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_45, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_37, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_38, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_39, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_40, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_41, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_42, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_43, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_44, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_45, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
       </div>
 
-      <div class="row">
-        <div class="col"><%= f.input :cell_46, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_47, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_48, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_49, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_50, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_51, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_52, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_53, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_54, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_46, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_47, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_48, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_49, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_50, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_51, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_52, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_53, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_54, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
       </div>
 
-      <div class="row">
-        <div class="col"><%= f.input :cell_55, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_56, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_57, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_58, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_59, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_60, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_61, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_62, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_63, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_55, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_56, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_57, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_58, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_59, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_60, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_61, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_62, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_63, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
       </div>
 
-      <div class="row">
-        <div class="col"><%= f.input :cell_64, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_65, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_66, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_67, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_68, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_69, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_70, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_71, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_72, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_64, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_65, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_66, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_67, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_68, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_69, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_70, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_71, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_72, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
       </div>
 
-      <div class="row">
-        <div class="col"><%= f.input :cell_73, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_74, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_75, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_76, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_77, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_78, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_79, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_80, label: false, collection: 0..9 %></div>
-        <div class="col"><%= f.input :cell_81, label: false, collection: 0..9 %></div>
+      <div class="row py-2">
+        <div class="col"><%= f.input :cell_73, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_74, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_75, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_76, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_77, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_78, label: false, collection: 0..9, input_html: { class: 'inputs_b' } %></div>
+        <div class="col"><%= f.input :cell_79, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_80, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
+        <div class="col"><%= f.input :cell_81, label: false, collection: 0..9, input_html: { class: 'inputs_a' } %></div>
       </div>
-    </div>
-    <div>
-      <%= f.button :submit, "Solve" %>
+
+      <div>
+        <%= f.button :submit, "SOLVE", class: "solve_button" %>
+      </div>
     </div>
   <% end %>
 </div>
