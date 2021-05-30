@@ -23,9 +23,6 @@ class Puzzle < ApplicationRecord
           next unless col.zero?
 
           surrounding_numbers = retrieve_numbers(arr, i, j)
-          # next unless surrounding_numbers.length == 8
-
-          # arr[i][j] = 45 - surrounding_numbers.sum
           if surrounding_numbers.length != 8
             count += 1
           else

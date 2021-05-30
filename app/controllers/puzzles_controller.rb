@@ -11,6 +11,7 @@ class PuzzlesController < ApplicationController
 
   def show
     @puzzle = Puzzle.find(params[:id])
+    @solved_puzzle = @puzzle.solve_puzzle(@puzzle.build_puzzle)
   end
 
   private

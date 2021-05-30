@@ -1,2 +1,116 @@
-<%= @puzzle.cell_01 %>
+<div class="container-sm p-3 text-center">
+  <% if @solved_puzzle.class == String %>
+    <%= @solved_puzzle %>
+  <% else %>
+    <div class="puzzle_container">
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[0][0] %></div>
+        <div class="col"><%= @solved_puzzle[0][1] %></div>
+        <div class="col"><%= @solved_puzzle[0][2] %></div>
+        <div class="col"><%= @solved_puzzle[0][3] %></div>
+        <div class="col"><%= @solved_puzzle[0][4] %></div>
+        <div class="col"><%= @solved_puzzle[0][5] %></div>
+        <div class="col"><%= @solved_puzzle[0][6] %></div>
+        <div class="col"><%= @solved_puzzle[0][7] %></div>
+        <div class="col"><%= @solved_puzzle[0][8] %></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[1][0] %></div>
+        <div class="col"><%= @solved_puzzle[1][1] %></div>
+        <div class="col"><%= @solved_puzzle[1][2] %></div>
+        <div class="col"><%= @solved_puzzle[1][3] %></div>
+        <div class="col"><%= @solved_puzzle[1][4] %></div>
+        <div class="col"><%= @solved_puzzle[1][5] %></div>
+        <div class="col"><%= @solved_puzzle[1][6] %></div>
+        <div class="col"><%= @solved_puzzle[1][7] %></div>
+        <div class="col"><%= @solved_puzzle[1][8] %></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[2][0] %></div>
+        <div class="col"><%= @solved_puzzle[2][1] %></div>
+        <div class="col"><%= @solved_puzzle[2][2] %></div>
+        <div class="col"><%= @solved_puzzle[2][3] %></div>
+        <div class="col"><%= @solved_puzzle[2][4] %></div>
+        <div class="col"><%= @solved_puzzle[2][5] %></div>
+        <div class="col"><%= @solved_puzzle[2][6] %></div>
+        <div class="col"><%= @solved_puzzle[2][7] %></div>
+        <div class="col"><%= @solved_puzzle[2][8] %></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[3][0] %></div>
+        <div class="col"><%= @solved_puzzle[3][1] %></div>
+        <div class="col"><%= @solved_puzzle[3][2] %></div>
+        <div class="col"><%= @solved_puzzle[3][3] %></div>
+        <div class="col"><%= @solved_puzzle[3][4] %></div>
+        <div class="col"><%= @solved_puzzle[3][5] %></div>
+        <div class="col"><%= @solved_puzzle[3][6] %></div>
+        <div class="col"><%= @solved_puzzle[3][7] %></div>
+        <div class="col"><%= @solved_puzzle[3][8] %></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[4][0] %></div>
+        <div class="col"><%= @solved_puzzle[4][1] %></div>
+        <div class="col"><%= @solved_puzzle[4][2] %></div>
+        <div class="col"><%= @solved_puzzle[4][3] %></div>
+        <div class="col"><%= @solved_puzzle[4][4] %></div>
+        <div class="col"><%= @solved_puzzle[4][5] %></div>
+        <div class="col"><%= @solved_puzzle[4][6] %></div>
+        <div class="col"><%= @solved_puzzle[4][7] %></div>
+        <div class="col"><%= @solved_puzzle[4][8] %></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[5][0] %></div>
+        <div class="col"><%= @solved_puzzle[5][1] %></div>
+        <div class="col"><%= @solved_puzzle[5][2] %></div>
+        <div class="col"><%= @solved_puzzle[5][3] %></div>
+        <div class="col"><%= @solved_puzzle[5][4] %></div>
+        <div class="col"><%= @solved_puzzle[5][5] %></div>
+        <div class="col"><%= @solved_puzzle[5][6] %></div>
+        <div class="col"><%= @solved_puzzle[5][7] %></div>
+        <div class="col"><%= @solved_puzzle[5][8] %></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[6][0] %></div>
+        <div class="col"><%= @solved_puzzle[6][1] %></div>
+        <div class="col"><%= @solved_puzzle[6][2] %></div>
+        <div class="col"><%= @solved_puzzle[6][3] %></div>
+        <div class="col"><%= @solved_puzzle[6][4] %></div>
+        <div class="col"><%= @solved_puzzle[6][5] %></div>
+        <div class="col"><%= @solved_puzzle[6][6] %></div>
+        <div class="col"><%= @solved_puzzle[6][7] %></div>
+        <div class="col"><%= @solved_puzzle[6][8] %></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[7][0] %></div>
+        <div class="col"><%= @solved_puzzle[7][1] %></div>
+        <div class="col"><%= @solved_puzzle[7][2] %></div>
+        <div class="col"><%= @solved_puzzle[7][3] %></div>
+        <div class="col"><%= @solved_puzzle[7][4] %></div>
+        <div class="col"><%= @solved_puzzle[7][5] %></div>
+        <div class="col"><%= @solved_puzzle[7][6] %></div>
+        <div class="col"><%= @solved_puzzle[7][7] %></div>
+        <div class="col"><%= @solved_puzzle[7][8] %></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><%= @solved_puzzle[8][0] %></div>
+        <div class="col"><%= @solved_puzzle[8][1] %></div>
+        <div class="col"><%= @solved_puzzle[8][2] %></div>
+        <div class="col"><%= @solved_puzzle[8][3] %></div>
+        <div class="col"><%= @solved_puzzle[8][4] %></div>
+        <div class="col"><%= @solved_puzzle[8][5] %></div>
+        <div class="col"><%= @solved_puzzle[8][6] %></div>
+        <div class="col"><%= @solved_puzzle[8][7] %></div>
+        <div class="col"><%= @solved_puzzle[8][8] %></div>
+      </div>
+    </div>
+  <% end %>
+</div>
 
