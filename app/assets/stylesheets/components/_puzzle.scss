@@ -20,12 +20,17 @@
 }
 
 .solve_button {
-  background-color: #ffcc29;
+  background-color: #06aa6d;
+  transition: 0.5s;
   border-radius: 8px;
   display: block;
   width: 100%;
   font-family: Poppins;
   color: white;
+  &:hover {
+    font-size: 20px;
+    color: white;
+  }
 }
 
 /* Chrome, Safari, Edge, Opera */
