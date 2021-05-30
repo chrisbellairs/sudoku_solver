@@ -29,3 +29,7 @@ I have used private methods with solve_puzzle to ensure that it retains single r
 I used pry to debug the code as the tests were not initially passing. I had one conditional break that was stopping the method from completing it's task as well as some errors in index numbers.
 
 I have added a second example puzzle to confirm it is working correctly.
+
+Created example and test to check that solve_puzzle returns a string if puzzle is unsolvable.
+
+Created break clause to return a message when the puzzle is unsolvable.

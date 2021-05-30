@@ -42,6 +42,16 @@ RSpec.describe Puzzle, type: :model do
                      [6, 2, 5, 9, 4, 8, 1, 3, 7],
                      [8, 7, 3, 5, 1, 2, 9, 6, 4]]
 
+  unsolvable = [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0],]
+
   it 'builds 9 x 9 2D Array' do
     build_puzzle = puzzle.build_puzzle
 
@@ -55,5 +65,10 @@ RSpec.describe Puzzle, type: :model do
 
     solve_puzzle_01 = puzzle.solve_puzzle(test_arr_01)
     expect(solve_puzzle_01).to eq expected_arr_01
+  end
+
+  it 'returns a string if puzzle cannot be solved.' do
+    unsolved_puzzle = puzzle.solve_puzzle(unsolvable)
+    expect(unsolved_puzzle).to eq "Puzzle cannot be solved..."
   end
 end
