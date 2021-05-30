@@ -14,6 +14,16 @@ class PuzzlesController < ApplicationController
     @solved_puzzle = @puzzle.solve_puzzle(@puzzle.build_puzzle)
   end
 
+  def edit
+    @puzzle = Puzzle.find(params[:id])
+  end
+
+  def update
+    @puzzle = Puzzle.find(params[:id])
+    @puzzle.update(puzzle_params)
+    redirect_to puzzle_path(@puzzle)
+  end
+
   private
 
   def puzzle_params
