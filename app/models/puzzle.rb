@@ -16,7 +16,7 @@ class Puzzle < ApplicationRecord
     arr = array
     count = 0
     while puzzle_contains_zero(arr) do
-      return "Puzzle cannot be solved..." if count == 162
+      return "Sorry, this puzzle cannot be solved..." if count == 162
 
       arr.each_with_index do |row, i|
         row.each_with_index do |col, j|
