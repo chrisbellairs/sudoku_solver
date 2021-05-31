@@ -39,9 +39,7 @@ class Puzzle < ApplicationRecord
   def puzzle_contains_zero(arr)
     contains_zero = false
     arr.each do |row|
-      row.each do |num|
-        contains_zero = true if num.zero?
-      end
+      row.each { |num| contains_zero = true if num.zero? }
     end
     return contains_zero
   end
@@ -107,9 +105,7 @@ class Puzzle < ApplicationRecord
 
   def find_col(arr, col)
     column = []
-    arr.each do |r|
-      column << r[col]
-    end
+    arr.each { |r| column << r[col] }
     return column
   end
 end
