@@ -89,3 +89,6 @@ Realised the ability to edit the puzzle if it comes back as unsolvable would be 
 /app/views/edit.html.erb
 /app/views/show.html.erb
 Created edit page and added a link to the edit page if a puzzle comes back as unsolvable. Also added link to create new puzzle on successful show page.
+
+https://sudokusolver-cb.herokuapp.com/
+App pushed to production with Heroku.
