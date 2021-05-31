@@ -1,6 +1,6 @@
 <div class="container-sm p-3 text-center">
   <% if @solved_puzzle.class == String %>
-    <%= @solved_puzzle %>
+    <%= @solved_puzzle %> <b><%= link_to "EDIT", edit_puzzle_path(@puzzle) %></b>
   <% else %>
     <h1>Your Results</h1>
     <div class="puzzle_container">
@@ -110,6 +110,10 @@
         <div class="col result"><%= @solved_puzzle[8][6] %></div>
         <div class="col result"><%= @solved_puzzle[8][7] %></div>
         <div class="col result"><%= @solved_puzzle[8][8] %></div>
+      </div>
+
+      <div class="new_button">
+        <%= link_to "SOLVE ANOTHER PUZZLE", root_path %>
       </div>
     </div>
   <% end %>

@@ -4,3 +4,30 @@
   color: white;
   margin: 0px 8px 0px 8px;
 }
+
+.new_button {
+  background-color: #ffcc29;
+  padding: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  font-family: Poppins;
+  color: white;
+  a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    &:hover {
+    color: black;
+  }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #ffcc29;
+  transition: 0.5s;
+  &:hover {
+  color: white;
+}
+}
