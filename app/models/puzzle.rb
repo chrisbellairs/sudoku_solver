@@ -16,8 +16,6 @@ class Puzzle < ApplicationRecord
     arr = array
     count = 0
     while puzzle_contains_zero(arr) do
-      return "Sorry, this puzzle cannot be solved..." if count == 162
-
       arr.each_with_index do |row, i|
         row.each_with_index do |col, j|
           next unless col.zero?
@@ -25,6 +23,7 @@ class Puzzle < ApplicationRecord
           surrounding_numbers = retrieve_numbers(arr, i, j)
           if surrounding_numbers.length != 8
             count += 1
+            return "Sorry, this puzzle cannot be solved..." if count == 162
           else
             arr[i][j] = 45 - surrounding_numbers.sum
             count = 0

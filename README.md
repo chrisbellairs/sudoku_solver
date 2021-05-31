@@ -39,3 +39,7 @@ Removed bootstrap from simple form to making styling easier and changed inputs t
 Created show page to display either an error message or the solved puzzle. Added variables making the instance method calls in the controller to enable this.
 
 Styled both the index and show page.
+
+App complete, but have realised the ability to edit the puzzle I just input if it comes back as unsolvable would be really useful. Added edit and update to routes and added code for both into the controller.
+
+Created edit page and added a link to the edit page if a puzzle comes back as unsolvable. Also added link to create new puzzle on successful show page.

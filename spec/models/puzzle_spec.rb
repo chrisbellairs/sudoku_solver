@@ -69,6 +69,6 @@ RSpec.describe Puzzle, type: :model do
 
   it 'returns a string if puzzle cannot be solved.' do
     unsolved_puzzle = puzzle.solve_puzzle(unsolvable)
-    expect(unsolved_puzzle).to eq "Puzzle cannot be solved..."
+    expect(unsolved_puzzle).to eq "Sorry, this puzzle cannot be solved..."
   end
 end
